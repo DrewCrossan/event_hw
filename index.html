@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country list app</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/app.js"></script>
+</head>
+<body>
+    <h1>Country event homework</h1>
+    <form id="new-country-form">
+        <div id="form-container">
+            <div class="form-item">
+                <label for="country" class="primary">Country</label>
+                <input type="text" id="country" required/>
+            </div>
+
+            <div class="form-item">
+                <label for="capital" class="primary">Capital City</label>
+                <input type="text" id="capital" required/>
+            </div>
+
+            <div class="form-item">
+                <label for="continent" class="primary">Continent</label>
+                <select id="continent">
+                <option value="" disabled selected></option>
+                <option value="Africa">Africa</option>
+                <option value="Asia">Asia</option>
+                <option value="Australia">Australia</option>
+                <option value="Europe">Europe</option>
+                <option value="North America">North America</option>
+                <option value="South America">South America</option>
+            </select>
+        </div>
+    </div>
+    <input type="submit" value="save"/>
+    </form>
+
+    <button id="delete-all">Delete All</button>
+
+    <h1>Country List</h1>
+    <ul id="country-list"></ul>
+</body>
+</html>
